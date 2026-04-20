@@ -1,12 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-  <title>My Store</title>
+<meta charset="UTF-8">
+<title>My Store</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial;
+  background:#0f172a;
+  color:white;
+}
+
+/* Navbar */
+.nav {
+  display:flex;
+  justify-content:space-between;
+  padding:15px;
+  background:#020617;
+}
+
+.logo {
+  font-size:22px;
+  font-weight:bold;
+  color:#38bdf8;
+}
+
+/* Hero */
+.hero {
+  text-align:center;
+  padding:50px;
+}
+
+.hero h1 {
+  font-size:40px;
+}
+
+.hero button {
+  padding:12px 25px;
+  background:#38bdf8;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* Products */
+.products {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.card {
+  background:#1e293b;
+  padding:15px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:scale(1.05);
+}
+
+.card img {
+  width:100%;
+  border-radius:10px;
+}
+
+.price {
+  color:#38bdf8;
+}
+
+/* Button */
+.buy {
+  margin-top:10px;
+  width:100%;
+  padding:10px;
+  background:#38bdf8;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+</style>
 </head>
+
 <body>
 
-<h1>مرحبا بكم فالمتجر ديالي</h1>
-<p>أول موقع ديالي 🔥</p>
+<div class="nav">
+  <div class="logo">Wassim Store</div>
+  <div>Home | Shop | Contact</div>
+</div>
+
+<div class="hero">
+  <h1>مرحبا بك فالمتجر ديالي 🔥</h1>
+  <p>أفضل المنتجات بأثمنة رائعة</p>
+  <button>تسوق الآن</button>
+</div>
+
+<div class="products">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Product 1</h3>
+    <p class="price">$20</p>
+    <button class="buy">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Product 2</h3>
+    <p class="price">$35</p>
+    <button class="buy">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Product 3</h3>
+    <p class="price">$50</p>
+    <button class="buy">Buy Now</button>
+  </div>
+
+</div>
 
 </body>
 </html>
